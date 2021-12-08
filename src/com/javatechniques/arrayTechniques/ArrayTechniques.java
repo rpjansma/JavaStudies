@@ -1,6 +1,7 @@
 package com.javatechniques.arrayTechniques;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayTechniques {
 
@@ -57,5 +58,23 @@ public class ArrayTechniques {
         System.out.println(findTheEvenNumber(array1, array2));
         System.out.println(revertArrayToNewResultArray(array1));
         reverseArrayInSamePlace(array1);
+
+
+        String[] arrayLimitado = new String[7];
+
+        System.out.println(arrayLimitado.toString());
+        arrayLimitado[0] = "A";
+        arrayLimitado[1] = "C";
+        arrayLimitado[2] = "B";
+
+        String[] arraySumonadoPopulado = new String[] {"Panceta", "Banha", "Toicinho"};
+
+        System.out.println(Arrays.toString(arraySumonadoPopulado));
+        Arrays.sort(arraySumonadoPopulado);
+        System.out.println(Arrays.toString(arraySumonadoPopulado));
+
+        System.out.println(Arrays.binarySearch(arraySumonadoPopulado, "Panceta"));
+
+
     }
 }
